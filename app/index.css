@@ -1,0 +1,23 @@
+#div1 {
+    float: left;
+}
+
+#div2 {
+    float: right;
+}
+
+#btn {
+    left: 50px; top: 50px;
+    width: 100px; height: 100px;
+}
+
+#table {
+    border: 2px solid black;
+    width: 1000px;
+}
+
+#img {
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+}

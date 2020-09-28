@@ -3,65 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Demo</title>
-    <style type="text/css">
-        #div1 {
-            float: left;
-        }
-        #div2 {
-            float: right;
-        }
-        #btn {
-            left: 50px; top: 50px;
-            width: 100px; height: 100px;
-        }
-        #table {
-            border: 2px solid black;
-            width: 1000px;
-        }
-        #img {
-            padding-top: 10px;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-    <script type="text/javascript">
-        function btnOnClick() {
-            // AJAX
-            var request = new XMLHttpRequest();
-            request.open('POST', 'btnOnClick', true);
-            request.setRequestHeader('Content-type', 'application/json;charset:utf-8'); 
-            request.send(null);
-            request.onreadystatechange = function() {
-                if(request.readyState === 4 && request.status === 200) {
-                    var books = JSON.parse(request.responseText);
-                    var table = document.getElementById('table');
-
-                    if(books.length > 0) {
-                        for(let book of books) {
-                            var tr = document.createElement('tr');
-                            table.appendChild(tr);
-                        
-                            var tdId = document.createElement('td');
-                            tdId.textContent = book.id;
-                            tr.appendChild(tdId);
-                        
-                            var tdTitle = document.createElement('td');
-                            tdTitle.textContent = book.title
-                            tr.appendChild(tdTitle);
-
-                            var tdAuthor = document.createElement('td');
-                            tdAuthor.textContent = book.author;
-                            tr.appendChild(tdAuthor);
-
-                            var tdDate = document.createElement('td');
-                            tdDate.textContent = book.date;
-                            tr.appendChild(tdDate);
-                        }
-                    }
-                }
-            };
-        }
-    </script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
     <div id="div1">
