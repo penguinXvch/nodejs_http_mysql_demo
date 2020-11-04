@@ -70,7 +70,7 @@ function accessDatabase(callBack) {
     connection.connect();
     connection.query(sqlStatement, count++,
         function(err, results) {
-            if (err) {
+            if(err) {
                 console.log(`SQL ERROR: ${err}`);
                 callBack([]);
             }
