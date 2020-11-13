@@ -2,6 +2,7 @@
 node.js 使用 http 与 mysql 模块作为服务端的样例程序。
 
 ### 开发环境：
++ Windows 10 Professional (latest)
 + node.js (latest)
 
 ### 使用方式：
